@@ -1,0 +1,19 @@
+/*
+ * Complete the vowelsAndConsonants function.
+ * Print your output using 'console.log()'.
+ */
+function vowelsAndConsonants(s) {
+    var vowelList="aeiouAEIOU";
+    var arr = [];
+    for(var x=0;x<s.length;x++){
+        if(vowelList.indexOf(s[x])!=-1){
+            console.log(s[x]);
+        }
+        else{
+            arr.push(s[x]);
+        }
+    }
+    for(var a=0;a<arr.length;a++){
+        console.log(arr[a]);
+    }
+}
