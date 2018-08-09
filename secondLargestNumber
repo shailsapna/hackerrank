@@ -1,0 +1,14 @@
+function getSecondLargest(nums) {
+    // Complete the function
+    var max=0;
+    var secMax=0;
+    for(var a =0;a<nums.length;a++){
+        if(nums[a]>max){
+            secMax=max;
+            max=nums[a];
+        }else if (nums[a] < max && nums[a] > secMax) {
+        secMax = nums[a]; // new second biggest value
+    }
+    }
+    return secMax;
+}
